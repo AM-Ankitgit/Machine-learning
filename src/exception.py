@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 def error_message_details(error,error_details:sys):
     _,_,exc_tb=error_details.exc_info()
@@ -21,5 +21,5 @@ class CustomException(Exception):
 #     try:               ## this code for your understanding purose to check CustomException is working fine or not
 #         a=1/0
 #     except Exception as e:
-#         logging.info('can divided by zeros')
+#         logging.info('cannot divided by zeros')
 #         raise CustomException(e,sys)
